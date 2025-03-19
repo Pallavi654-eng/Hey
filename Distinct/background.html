@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- study background-repeat and background-image+ object-fit+ overflow + background-attachment on tailwind all properties -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<!-- bg-repeat-space -> repeating in x direction
+ bg-repeat-round -> repeating in complete page(x+y direction)
+ bg-repeat-x
+ bg-repeat-y
+ bg-auto -->
+<body class="bg-[url(/images/parkimage.jpg)] bg-repeat bg-auto bg-scroll">
+    <!-- bg-scroll is default -->
+
+    <div class="max-w-2xl h-96 border-4 bg-[url(/images/activitycube.webp)] overflow-auto bg-local">
+        <!-- we can increase the width and height of our div section according to our convenince in following ways:
+        max-w-xs	20rem (320px)
+        max-w-sm	24rem (384px)
+        max-w-md	28rem (448px)
+        max-w-lg	32rem (512px)
+        max-w-xl	36rem (576px)
+        max-w-2xl	42rem (672px)
+        max-w-3xl	48rem (768px)
+        max-w-4xl	56rem (896px)
+        max-w-5xl	64rem (1024px)
+        max-w-6xl	72rem (1152px)
+        max-w-7xl	80rem (1280px)
+        max-w-full	100% of parent container
+        max-w-screen-xl
+
+
+
+
+        Class	Value (in px)
+        h-1	    4px
+        h-2	    8px
+        h-4	    16px
+        h-8	    32px
+        h-16	64px
+        h-32	128px
+        h-64	256px
+        h-80	320px
+        h-96	384px
+        (now same as width)
+        -->
+        <!-- bg-local generally we use with container
+        and bg-local and bg-scroll are same -->
+        <p class="text-3xl text-white">This is a para</p>
+        <p class="text-8xl text-white">This is a para</p>
+        <p class="text-7xl text-white">This is a para</p>
+        <p class="text-9xl text-white">This is a para</p>
+        <p class="text-8xl text-white">This is a para</p>
+        <p class="text-7xl text-white">This is a para</p>
+
+    </div>
+
+
+    <!-- bg-clip-border-> image is present at border also
+     bg-clip-padding-> exclude border 
+    bg-clip-content -> makes the background visible only within the content area (excluding padding and border areas).
+    bg-clip-text-> used to apply a background inside the text itself, creating stunning text effects like gradients or patterns.(and in this background image goes off)  -->
+    <div class="w-64 h-64 bg-[url(/images/forest.webp)] m-10 bg-clip-content border-dotted border-4 p-6 overflow-auto">
+        <p>Hello</p>
+    </div>
+
+    <!-- bg-gradient-to-b
+    bg-gradient-to-r -->
+    <p class="text-7xl font-extrabold bg-gradient-to-r from-pink-600 via-green-300 to-blue-600 text-transparent bg-clip-text leading-normal">K23BG Tailwind CSS Date:17/03/2025</p>
+
+
+
+</body>
+</html>

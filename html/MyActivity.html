@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* text-align: center; */
+            background-color: burlywood;
+            padding: 10px 20px;
+            text-shadow: 2px 2px 5px grey;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            /* justify-content: space-evenly; */
+            align-items: center;
+        }
+        .logo{
+            font-size:24px;
+            font-weight: bold;
+            color: black;
+        }
+        .nav-links ul{
+            /* to remove the default bullet points */
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #d42424;
+        }
+        .get-started .btn{
+            /* display: flex; */
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        *{
+            /* box-sizing property is set to content-box. This means:  The width and height you specify for an element only apply to the content area.
+            The padding and border are added outside of the content dimensions, increasing the element's total size. */
+            box-sizing: border-box;
+        }
+
+        .image-section{
+            position: relative;
+            background: url(../images/activitycube.webp);
+            height: 500px;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text-container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            color: white;
+            padding: 20px;
+            /* margin-right: 100px; */
+        }
+
+        /* Left Text Styling */
+        .text-left {
+            font-size: 70px;
+            text-align: left;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            
+        }
+
+        /* .text-left h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        } */
+
+       
+
+        /* Right Text Styling */
+        .text-right {
+            width: 45%;
+            text-align: right;
+        }
+
+
+        /* .image{
+            max-width: 300px;
+        } */
+
+        .text-right .btn{
+            background-color: rgb(224, 115, 13);
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+
+
+        .features{
+            display: flex;
+            justify-content: center;   /*distribute items evenly along main axis(horizontally in a row or vertically in a column)*/
+            /* margin: 40px 20px; */ margin: 40px auto;
+            /* border-spacing: 60px; */
+            gap: 20px;  /* Adds space between boxes */
+            
+        }
+        .features .hello{
+            text-align: center;
+            background-color: white;
+            border: 1px solid purple;
+            padding: 20px;
+            border-radius: 10px;
+            width: 20%;
+            box-sizing: border-box;
+            
+        }
+        .h3{
+            margin: 15px 0;
+        }
+        .features .hii{
+            text-align: center;
+            background-color: white;
+            border: 1px solid purple;
+            padding: 0 20px;
+            border-radius: 10px;
+            width: 20%;
+            box-sizing: border-box;
+
+        }
+
+        .features .card{
+            text-align: center;
+            background-color: white;
+            border: 1px solid purple;
+            padding: 20px;
+            border-radius: 10px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <header class = "navbar">
+        <!-- for navbar -->
+        <div class="container">
+            <!-- for logo at left -->
+             <div class="logo">
+                CalmM5
+             </div>
+            <!-- <nav> tag in HTML is used to define a section of a webpage that contains navigation links. -->
+            <nav class="nav-links">
+                <ul>
+                    <!-- a tag is used to create hyperlinks that allow users to navigate from one page to another.
+                     # symbol is used as placeholder link or internal link in same page
+                     simply when href attribute has just # in it, typically means that the link doesn't lead to an external page -->
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <!-- we have to make get started as button so give it another class -->
+            <div class="get-started">
+                <a href="#" class="btn">GET STARTED</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- section tag is especially useful when content can be divided into distinct sections with their own focus/topic -->
+    <section class="image-section">
+        <div class="text-container">
+            <!-- Left text -->
+             <div class="text-left">
+                <h1>Selling Digital Products</h1>
+             </div>
+            
+            <!-- right text -->
+             <di class="text-right">
+                <p>Our unique advantage in providing specialized business consulting lies in our team's extensive experience in strategy determination. This sets us apart from competitors and enables us to deliver tailored solutions that meant that meet the specific needs of our clients.</p>
+                <a href="#" class="btn">Shop Now -></a>
+             </div>
+            
+            
+        </div>
+     </section>
+     
+     
+
+     <section class="features">
+        <div class="hello">
+            <h3>Secure Transaction</h3>
+            <p>Sed nisi lacus sed viverra tellus in hac habitasse platea dictumst. Technology has transformed the way we live, work, and communicate. From smartphones to artificial intelligence, innovations continue to reshape industries and improve efficiency. As advancements accelerate, adapting to new technologies is essential for staying competitive in the modern world.</p>
+        </div>
+        <div class="hii">
+            <h3>24/7 Best Support</h3>
+            <p>Phasellus egestas tellus varius velit pharetra turpis nunc eget lorem. Education is the key to personal and professional growth. It empowers individuals with knowledge, critical thinking skills, and the ability to solve real-world problems. A strong education system not only benefits individuals but also contributes to the overall progress of society.Online shopping has revolutionized the retail industry, providing convenience and accessibility to consumers worldwide. With just a few clicks, people can compare prices, read reviews, and have products delivered to their doorstep. This has made shopping easier and more efficient than ever before.</p>
+        </div>
+        <div class="card">
+            <h3>Quality Platform</h3>
+            <p>Netus et malesuada fames ac turpis egestas in mollis nunc commodo. Maintaining a healthy lifestyle is crucial for physical and mental well-being. Regular exercise, a balanced diet, and sufficient sleep contribute to overall health. Additionally, practicing mindfulness and stress management techniques can enhance productivity and happiness.</p>
+        </div>
+     </section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- date: 17-02-25 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+ </head>
+ <body>
+
+    <div class="bg-green-600">
+
+
+        <!-- div itself is block element so it will cover entire width -->
+    <div class="bg-pink-400">This is a div section</div>
+
+    <!-- i want to convert block element to inline element using INLINE CLASS-->
+    <div class="bg-pink-400 inline">This is a div section</div>
+
+    <!-- span is inline element so the width will be only where the text is and inline element does not start from new line but block element does -->
+    <span class="bg-orange-400">This is a span</span>
+
+    <!-- converting inline to block so it will start from new line and it is converted using block keyword -->
+    <span class="bg-orange-400 block">This is a span</span>
+
+    <!-- we can manually change width, height in inline block class but not in inline class  -->
+    <div class="bg-gray-400 inline-block w-64 h-64">This is a div section</div>
+
+    <!--invisible->  will take space also + element will be invisible -->
+    <div class="bg-amber-900 invisible">This is invisible section</div>
+
+    <!-- <div class="bg-amber-900 visible">This is hidden section</div> -->
+
+    <div class="bg-amber-900 hidden">This is hidden section</div>
+
+
+    </div>
+
+    
+ </body>
+ </html>

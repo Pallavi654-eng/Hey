@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    
+        <h2 class="text-center font-bold ">Tailwind CSS Box Model Example</h2>
+
+        <div class="container bg-blue-800 rounded-xl m-auto p-12">
+            <div class="text-white">
+                <h2 class="font-bold font-3xl">Box Model</h2>
+                <p>This is demostrates the properties of the box model</p>
+            </div>
+            <!-- first box -->
+             <div class="bg-white border-dotted border-4 border-blue-300 p-2">
+                <p class="font-bold">Padding</p>
+                <p>This box has p-4, which means padding of 1 rem(16px)</p>
+             </div>
+             <!-- Second box -->
+              <div class="bg-white border-dotted border-4 border-blue-300 p-2">
+                <p class="font-bold">Border</p>
+                <p >This box has border-4, a dashed border with border-blue-300.</p>
+              </div>
+              <!-- Third box -->
+              <div class="bg-white border-dotted border-4 border-blue-300 p-2">
+                <p class="font-bold">Margin</p>
+                <p >This box is separated from others using mb-4(margin-bottom)</p>
+              </div>
+
+              <!-- Fourth Box -->
+               <div class="bg-white border-dotted border-4 border-blue-300">
+                <p class="font-bold">Width & Height</p>
+                <p>This box has w-64(16rem) and h-32(8rem)</p>
+               </div>
+
+        </div>
+    
+</body>
+</html>

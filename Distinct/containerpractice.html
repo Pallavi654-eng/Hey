@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <!-- after using class="container" the size of above div section got reduced because:   -->
+    <div class="container mx-auto">
+        <h1 class="text-xl text-yellow-200 bg-amber-800 text-center border-4 border-solid border-amber-300 h-30">Container Example</h1>
+    </div>
+
+    <!-- max-width -->
+    <div class="container max-w-96">
+        <h1 class="text-xl text-yellow-200 bg-amber-800 text-center border-4 border-solid border-amber-300 h-30">Container Example</h1>
+    </div>
+    <!-- we can also fix width in fraction -->
+    <div class="container max-w-3/4">
+        <h1 class="text-xl text-yellow-200 bg-amber-800 text-center border-4 border-solid border-amber-300 h-30">Container Example</h1>
+    </div>
+    <!-- want to specify width by yourself -->
+    <div class="container max-w-[500px]">
+        <h1 class="text-xl text-yellow-200 bg-amber-800 text-center border-4 border-solid border-amber-300 h-30">Container Example</h1>
+    </div>
+
+    <!-- media-query: responsive  
+     when screen size is medium(md-768px) or more than then container size will be reduced to 384px-->
+     <div class="container md:max-w-md">
+        <h1 class="text-xl text-yellow-200 bg-amber-800 text-center border-4 border-solid border-amber-300 h-30">Container Example</h1>
+    </div>
+
+    <!-- it means when the screen size is xl(1280) then max width of container will be md(448 px) -->
+    <div class="container max-w-sm xl:max-w-md">
+        <h1 class="text-xl text-yellow-200 bg-amber-800 text-center border-4 border-solid border-amber-300 h-30">Container Example</h1>
+    </div>
+
+    <!-- in box-border: includes padding and border
+     in box-content: excludes the padding and border
+     in this create one box and give height and width to it:  -->
+     <div class="container md:max-w-md box-border">
+        <!-- box-border → Ensures the border and padding are included in the element’s total width and height  -->
+        <h1 class="text-xl text-red-600 bg-gray-700 text-center border-8 border-solid border-zinc-400 h-30">Container Example</h1>
+    </div>
+</body>
+</html>

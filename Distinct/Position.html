@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+<!-- Position:
+5 classes
+1) static
+2) fixed
+3) absolute - set value with respect to anything(for child element)
+4) relative - set value with respect to anything(for parent element)
+5) sticky
+-->
+    <div class="border-4 border-y-pink-500 w-96 h-96 m-10 relative">
+        <p>Relative para</p>
+        <!-- position can only be set if you are specifying relative and absolute -->
+        <p class="absolute right-2 bottom-4">Absolute para</p>
+        <p class="absolute right-2 top-4">Absolute para</p>
+        <p class="absolute bottom-5 left-5">New para</p>
+    </div>
+</body>
+</html>

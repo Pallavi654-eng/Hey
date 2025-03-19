@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <div>
+        <!-- by-default class -> object-fill(utility to stretch the image) -->
+        <img class="border-2 border-red-400 object-fill w-96 h-96" src="/images/Cat1.webp" alt="Catty">
+        <!-- cover - extra part gets cropped -->
+        <img class="border-2 border-red-400 object-cover w-96 h-96" src="/images/parkimage.jpg" alt="Catty">
+        <!-- if i want to see just left-top side -->
+        <img class="border-2 border-red-400 object-left-top w-96 h-96" src="/images/parkimage.jpg" alt="Catty">
+        <!-- give some extra space on top and bottom(due to landscape image) -->
+        <img class="border-2 border-red-400 object-contain w-96 h-96" src="/images/parkimage.jpg" alt="Catty">
+        <!-- i want image to be placed at the top -->
+        <img class="border-2 border-red-400 object-left-bottom w-96 h-96" src="/images/parkimage.jpg" alt="Park">
+        <!-- scale-down -->
+        <img class="border-2 border-red-400 object-contain w-96 h-96" src="/images/forest.webp" alt="Park">
+
+        <img class="border-2 border-red-400 object-none w-96 h-96" src="/images/forest.webp" alt="Park">
+        <!-- 70% away from left and 20% away from top -->
+        <img class="border-2 border-red-400 object-scale-down object-[70%_20%] w-96 h-96" src="/images/parkimage.jpg" alt="Forest">
+
+    </div>
+</body>
+</html>

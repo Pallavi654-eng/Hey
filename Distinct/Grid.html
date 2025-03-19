@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <!-- if i want to give gap between rows and column then use gap -->
+    <div class="bg-green-200 grid grid-cols-2 grid-rows-3 gap-3.5 md:grid-cols-3">
+        <!-- <div class="bg-pink-300 p-12 col-span-2">Header</div> -->
+        <div class="bg-pink-300 p-12 col-start-1 col-end-3">Header</div>
+        <!-- i want to merge 3 rows so i write row-span to increase area for writing -->
+        <!-- <div class="bg-orange-300 p-12 row-span-3">Side bar</div> -->
+        <div class="bg-orange-300 p-12 row-start-2 row-end-4">Side bar</div>
+        <div class="bg-yellow-300 p-12 row-span-3">Main Content</div>
+        <div class="bg-gray-300 p-12 col-span-2">Footer</div>
+        <!-- how can we make it more responsive  md:grid-cols-3-->
+    </div>
+
+
+
+
+
+
+</body>
+</html>

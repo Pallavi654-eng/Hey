@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+
+    <!-- if i use div section and container the size of screen get reduced due to haf the size of container(1536) -->
+
+    <!-- using tailwind classes we made the table  -->
+     <!-- 1) w-full is for that if we want to see full size -->
+    <table class="border-4 border-black w-full border-separate table-fixed">
+        <!-- 2) border-separate is for to separate the borders -->
+         <!-- 3) and border collapse is by-default -->
+        <thead>
+            <tr class="odd:bg-purple-800 even:bg-amber-700">
+                <th class="border border-black border-double">Roll No.</th>
+                <th class="border border-black border-double">Name</th>
+                <th class="border border-black border-double">Course</th>
+            </tr>
+        </thead>
+<!-- table-auto(default) automatically change it's size if in any cell the content is more the width will automatically be large -->
+ <!-- table-fixed every column is of same size irrrespective of the content  -->
+  <!-- w-1/2 is table will be on half of the screen -->
+
+        <tbody>
+            <tr class="odd:bg-purple-300 even:bg-amber-500">
+                <td class="border border-black border-double">1.</td>
+                <td class="border border-black border-double">Sunil</td>
+                <td class="border border-black border-double">BBA jhsKfhKJHnkjbvvvvytfctedcvfr  tgbnhyujmkiolvvjjjzndskasjdfhuewyqi   oqioasfsdhghsuiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</td>
+            </tr>
+
+            <!-- if i want 2nd row show not be shown to user then we use collapse -->
+            <tr class="odd:bg-purple-300 even:bg-amber-500 collapse">
+                <td class="border border-black border-double">2.</td>
+                <td class="border border-black border-double">Raj</td>
+                <td class="border border-black border-double">Btech</td>
+            </tr>
+
+            <tr class="odd:bg-purple-300 even:bg-amber-500">
+                <td class="border border-black border-double">3.</td>
+                <td class="border border-black border-double">Gaurav</td>
+                <td class="border border-black border-double">Agriculture</td>
+            </tr>
+
+            <tr class="odd:bg-purple-300 even:bg-amber-500">
+                <td class="border border-black border-double">4.</td>
+                <td class="border border-black border-double">Shankar</td>
+                <td class="border border-black border-double">Biology</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
