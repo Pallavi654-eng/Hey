@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <!-- JQuesry is one of lightweight library of javascript
+to access element in js- document.getElementBy......
+But in JQuery no need to write big code use selectors in this
+i) in case of short selector
+ii) easily manipulate DOM
+iii) easy animation
+
+HOW TO USE:
+2 ways to add JQuery:
+i) install in ur project
+ii) JQuery CDN
+
+
+how to add external js file to html file-> using script tag
+-->
+
+<div class="w-32 h-32 bg-purple-400" id="div1">This is a div section</div>
+
+
+<!-- Method-1 -->
+<!-- <script src="/jquery-3.7.1.js"></script> -->
+
+<!-- Method-2 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+
+    $(document).ready(function(){
+
+        // alert("OK");
+        // replacement of content using jquery 
+        // $('#div1').html("INT219");
+
+        var a = $('#div1').html();
+        console.log(a);
+
+        $('#div2').html('#div1');
+
+    })
+
+
+
+</script>
+
+</body>
+</html>

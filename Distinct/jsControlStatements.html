@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks = 50;
+        if(marks>40){
+            document.write("Result is Pass");
+        }else{
+            document.write("Result is fail");
+        }
+    </script>
+
+    <script>
+        var cgpa = 9.2;
+        if(cgpa>9){
+            document.write("Internship in Google");
+        }else if(cgpa>8 && cgpa<9){
+            document.write("Internship in TCS");
+        }
+        else if(cgpa>7 && cgpa<8){
+            document.write("Internship in INFOSYS");
+        }else{
+            document.write("Inclose Internship");
+        }
+
+        document.write("<h1>Switch Statement</h1>");
+        var a=2;
+        switch(a){
+            case 1:
+                document.write("Case 1 Matched");
+                break;
+            case 2:
+                document.write("Case 2 Matched");
+                
+            case 3:
+                document.write("Case 3 Matched");
+                
+            default:
+                document.write("No case is matched");
+                break;
+        }
+    </script>
+
+    <script>
+
+        var num1 = 10;
+        var num2 = 20;
+        switch(1){
+            case 1:
+                document.write("Addition"+(num1+num2));
+                break;
+            case 2:
+                document.write("Subtraction"+(num1-num2));
+                
+            case 3:
+                document.write("Multiplication"+(num1*num2));
+                
+            default:
+                document.write("Division"+(num1/num2));
+                break;
+        }
+
+</script>
+        <script>
+            document.write("<h1>For Loop</h1>");
+
+            for(var j=2; j<=10; j++){
+                document.write(j+"<br>");
+            }
+            
+            document.write("<h1>While Loop</h1>");
+            var k=5;
+            while(k<=15){
+                document.write(k+"<br>");
+                k++;
+            }
+
+            document.write("<h1>Do-While Loop</h1>");
+            var t=3;
+            do{
+                document.write(t+"<br>");
+                t++;
+            }while(t<=12);
+        </script>
+        
+    </script>
+</body>
+</html>

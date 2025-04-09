@@ -1,0 +1,109 @@
+<!--
+02-04-25
+
+i) document.createElement(tagName):
+ii)document.createTextNode(text):
+iii)parentNode.appendChild(node):
+iv)parentNode.removeChild(node):
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+ </head>
+ <body>
+    
+    <script>
+        let para = document.createElement("p");
+        para.textContent = "I am creating a new para";
+
+        document.body.appendChild(para);
+        // create text node(as separate element)
+        let node = document.createTextNode("Text node content");
+        document.body.appendChild(node);
+
+        // create a div section using javascript
+        let xyz = document.createElement("div");
+        xyz.textContent = "DIV1";
+        xyz.className = "w-44 h-44 bg-orange-400";
+        document.body.appendChild(xyz);
+        xyz.appendChild(para);  //para is child here and div is parent node
+        document.body.appendChild(xyz);
+
+        xyz.removeChild(para);
+
+    </script>
+
+    <!-- 
+ACCESSING ELEMENTS:
+
+i) document.getElementById(id):
+ii) document.getElementByClassName(className):
+iii)document.getElementsByTagName(tagName):
+iv)document.querySelector(selector):
+v)document.querySelectorAll(selector):
+
+ -->
+
+<p id="p1" class="para">Para 1</p>
+<p id="p2" class="para">Para 2</p>
+<p id="p3" class="para">Para 3</p>
+<p id="p4" class="para">Para 4</p>
+<p id="p5" class="para">Para 5</p>
+
+<button id="btn" class="border-2" onclick="changecontent()">Click!</button>
+
+<script>
+// i)
+    function changecontent(){
+        let elt = document.getElementById("p2");
+        elt.innerHTML="INT219";  //for replacement
+
+    }
+
+
+//  ii)  how to access elements by class name
+//when more than one elemnts you are accessing you must need indexing
+ let elts = document.getElementsByClassName("para");
+ elts[1].innerHTML = "Front End";
+
+ for(var i=0; i<elts.length; i++){
+    elts[i].innerHTML="Front";
+ }
+
+
+// iii) fetch by tagname
+let eltt = document.getElementsByTagName("p");
+ eltt[1].innerHTML = "Front End";
+
+ for(var i=0; i<eltt.length; i++){
+    eltt[i].innerHTML="Front11";
+ }
+
+
+//iv) 
+// only first one will be selected
+let elt = document.querySelector(".para");
+elt.innerHTML = "Web Class"
+
+
+//if i want all shoyld be selected
+let elta = document.querySelectorAll(".para");
+elta[1].innerHTML = "Front End";
+
+for(var i=0; i<elta.length; i++){
+   elta[i].innerHTML="Front11 End";
+}
+
+
+
+
+</script>
+
+
+ </body>
+ </html>

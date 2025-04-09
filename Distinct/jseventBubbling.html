@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <!-- when we using any scenario and we working on child it will go back to parent also -->
+    <div class="w-32 h-32 bg-green-300 m-2" id="div1">
+        <button class="border-2 rounded-2xl m-2 p-2" id="btn1">Click!!!</button>
+
+    </div>
+    <script>
+        document.getElementById("div1").addEventListener("click",function(){
+            alert("Div Clicked");
+        })
+
+        document.getElementById("btn1").addEventListener("click",function(e){
+            alert("Button clicked");
+            e.stopPropagation();
+        })
+    </script>
+</body>
+
+</html>

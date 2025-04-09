@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <!-- how to change the style in js
+ 1) element.style.property = value
+ 2) element.classList.add(className) 
+ 3) element.classList.remove(className) -->
+
+    <p id = "p1">This is a style paragraph</p>
+
+    <button id="btn1" class="border-2 rounded-2xl" onclick="changeStyle()">Change Style</button>
+
+    <br>
+    <p id = "p2">This is a toggle style paragraph</p>
+    <button id="btn1" class="border-2 rounded-2xl" onclick="changetoggleStyle()">Change Toggle Style</button>
+
+    <br>
+    <!-- dark and light theme -->
+     <button class="border-2 rounded-2xl border-black" onclick="changeThemeStyle()" >Change the theme of page</button>
+
+     <br>
+     <p id="p3">ClassList Styling</p>
+     <button id="btn1" class="border-2 rounded-2xl" onclick="addStyle()">Add Style</button>
+     <button id="btn1" class="border-2 rounded-2xl" onclick="removeStyle()">Remove Style</button>
+
+     <br>
+     <p id="msg" class="hidden">Welcome to frontEnd</p>
+     <button class="border-2 border-black" onclick="showhide()">Show/Hide message</button>
+     
+
+
+
+     <br>
+     <br>
+     <p id="txt">Change text</p>
+     <button class="border-2 border-black" id="btn6">Add Event Listener</button>
+     <button class="border-2 border-black" id="btn7" onclick="remove()">Remove EventListener</button>
+
+    <script>
+
+       function myfun(){
+        document.getElementById("txt").innerHTML=Math.random();
+       }
+        document.getElementById("btn6").addEventListener("click", myfun);
+
+       function remove(){
+        document.getElementById("btn6").removeEventListener("click", myfun);
+       }
+
+
+        function showhide(){
+            document.getElementById("msg").classList.toggle("hidden");
+        }
+
+        function addStyle(){
+            let st=document.getElementById("p3");
+            st.classList.add("text-4xl");
+            st.classList.add("text-purple-300");
+            st.classList.add("text-center");
+        }
+        function removeStyle(){
+            let st=document.getElementById("p3");
+            st.classList.remove("text-4xl");
+            st.classList.remove("text-purple-300");
+            st.classList.remove("text-center");
+        }
+
+        // pending?
+        function changeThemeStyle(){
+            let elt = document.getElementsById("body");
+            // elt.classList.toggle("text-5xl");
+            elt.classList.toggle("bg-black");
+        }
+
+        function changetoggleStyle(){
+            let elt = document.getElementById("p2");
+            elt.classList.toggle("text-5xl");
+            elt.classList.toggle("bg-purple-300");
+
+        }
+
+        function changeStyle(){
+            let elt = document.getElementById("p1");
+            elt.style.color = "purple";
+            elt.style.backgroundColor="orange";
+            elt.style.fontStyle="italic";
+            elt.style.textAlign="center";
+        }
+    </script>
+
+    <!-- alternative way to add events
+     1)element.addEventListner(event, function)
+     2)element.removeEventlistner -->
+</body>
+</html>

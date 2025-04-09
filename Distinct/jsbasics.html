@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <script>
+        // external js(outer file) has more priority than internal
+        var section="K23BG";
+        var rollno = 5;
+        var boolval = true;
+        console.log(section);
+        console.log(rollno, boolval);
+
+        console.log(typeof(section),typeof(rollno), typeof(boolval));
+
+        // in script tag auto suggestions do not come
+
+    //operators:
+     //1. arithmetic operators -> %, ++, --, -, +, **
+    // 2. assignment operator
+    // 3. comparison operator
+     //4. logical operator
+    // 5. string operators
+    // 6. conditional(ternary) operator
+
+    
+    document.write("<h1 class='text-black font-bold bg-blue-500 p-4'>Arithmetic Operation</h1><br>");
+    var a=7;
+    var b=a++;
+
+    document.write("The value of a: "+a+"<br>");
+    document.write("The value of b: "+b+"<br>");
+    var c=--b;
+    document.write("The value of c: "+c+"<br>");
+    var d = ++a;
+    document.write("The value of d: "+d+"<br>");
+
+    var e = d%b;
+    document.write("the value of a: "+a+"<br>");
+    document.write("the value of e: "+e+"<br>");
+
+    var x=7;
+    var y=7;
+    document.write("Less than Equal to: "+(x<=y)+"<br>");
+
+    // Logical operators
+    //AND(&&) + OR(||) + NOT(!)
+
+    var m = 0;
+    var n = 1;
+    document.write("Check for AND operation: " + (m && n) + "<br>");
+    document.write("Check for OR operation: " + (m || n) + "<br>");
+    document.write("Check for NOT operation: " + (!m) + "<br>");
+    </script>
+
+    
+
+</body>
+</html>

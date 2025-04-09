@@ -1,0 +1,107 @@
+<!-- very important topic:  events -->
+<!--    02-04-25
+
+i) onclick
+ii) oncontextmenu   -> shown when right click
+111) ondblclick     -> on double click
+iv) onmousedown     -> no need to take finger back while clicking on the image the pop up will be showm while pressing mouse button
+v) onmouseenter     -> just keep cursor on image it will give the message(enter inside element)
+vi) onmouseleave    -> when you leave the image it gives message  // it works only for parent element
+vii) onmousemove    -> those many times you are moving inside the element/picture it will give messages or count
+viii) onmouseout    ->when you leave the parent and child (for both it works)
+ix) onmouseover     ->when u enter parent and child (for bot it works)
+x) onmouseup        -> work when pressing and releasing of mouse should not be on same element then it give message (pressing can be on any place but releasing should be on element)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+
+</head>
+<body>
+    
+    <img src="/images/forest.webp" alt="Cat" class="w-44 h-44" onclick="genAlert()">
+
+    <script>
+        function genAlert(){
+            alert("You clicked on an image!!")
+        }
+
+    </script>
+
+    <img src="/images/cat2.jpg" alt="Cat" class="w-44 h-44" oncontextmenu="genAlert()">
+
+    <script>
+        function genAlert(){
+            alert("Context menu button !!")
+        }
+
+    </script>
+
+    <img src="/images/Cat1.webp" alt="Cat" class="w-44 h-44" ondblclick="genAlert()">
+
+    <script>
+        function genAlert(){
+            alert("Double click function!!")
+        }
+    </script>
+
+    <img src="/images/parkimage.jpg" alt="Cat" class="w-44 h-44" onmousedown="genAlert()">
+
+    <script>
+        function genAlert(){
+            alert("Onmouse down function!!")
+        }
+    </script>
+
+    <img src="/images/activitycube.webp" alt="Cat" class="w-44 h-44" onmouseenter="genAlert()">
+
+    <script>
+        function genAlert(){
+            alert("Onmouse enter function!!")
+        }
+    </script>
+
+    <img src="/images/forest.webp" alt="Cat" class="w-44 h-44" onmouseleave="genAlert()">
+
+    <script>
+        function genAlert(){
+            alert("Onmouse leave function!!")
+        }
+    </script>
+
+    <img src="/images/cse316.webp" alt="Cat" class="w-44 h-44" onmousemove="inc()">
+    <script>
+        var count=0;
+        function inc(){
+            count++;
+            console.log(count);
+    }
+    function getAlert(){
+        alert("You clicked an image!");
+    }
+    </script>
+    
+
+    <div class="w-56 h-56 bg-orange-400" onmouseover="inc()">
+        <img src="/images/parkimage.jpg" alt="Park" class="w-44 h-44">
+    </div>
+    <script>
+        var count=0;
+        function inc(){
+            count++;
+            console.log(count);
+    }
+    function getAlert(){
+        alert("You clicked an image!");
+    }
+    </script>
+
+</body>
+</html>
+
+

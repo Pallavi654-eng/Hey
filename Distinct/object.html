@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object literals
+        let laptop = {
+            price: 40000,
+            color:"Black",
+            brand:"HP",
+            basic: function(){
+                console.log(`I have ${laptop.brand} laptop laptop with ${laptop.price} color and the price is ${laptop.color}`);
+            }
+
+        }
+        console.log(laptop);
+        console.log(laptop.color, laptop.brand);
+        console.log("I have "+laptop.brand+" laptop with "+laptop.color+" color and the price of laptop is "+laptop.price);
+        // console.log("I have "+laptop.brand+"laptop");
+
+        console.log(`I have ${laptop.brand} laptop laptop with ${laptop.price} color and the price is ${laptop.color}`);
+        
+        // i want to access the function
+        laptop.basic();
+
+    </script>
+</body>
+</html>

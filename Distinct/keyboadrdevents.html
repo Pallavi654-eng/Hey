@@ -1,0 +1,63 @@
+<!-- 
+ 02-04-25
+
+KEYBOARD EVENTS:
+
+i) onkeydown-> whenever i press any key(including shift+tab+backspace) the alert option will come
+ii) onkeypress -> works only for digits,letter,symbol keys
+iii) onkeyup -> after typing when we release the key then it will show the message
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="" class="border-2 m-3 p-2" onkeydown="getAlert()">
+
+    </form>
+    <script>
+        var count = 0;
+        function inc(){
+            count++;
+            console.log(count);
+        }
+    </script>
+
+
+<!--
+FORM EVENTS
+
+i) onblur      -> works when you lost the focus when we come out it get blur
+ii) onchange
+iii) onfocus
+iv) onselect
+v) onsubmit
+vi) onreset
+-->
+
+    <form action="">
+        <input type="text" name="" id="" class="border-2 m-3 p-2" onblur="getAlert()">
+
+    </form>
+    <script>
+        var count = 0;
+        function inc(){
+            count++;
+            console.log(count);
+        }
+        function getAlert(){
+            alert("You clicked on image");
+        }
+    </script>
+
+
+
+
+</body>
+</html>
